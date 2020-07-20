@@ -1,0 +1,28 @@
+.wedo-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wedo-item {
+  list-style: none;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.wedo-img {
+  position: relative;
+  width: 100%;
+}
+.wedo-info {
+  width: 370px;
+  height: 70px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  color: $text-color;
+  padding: 27px 85px;
+  bottom: 0px;
+}

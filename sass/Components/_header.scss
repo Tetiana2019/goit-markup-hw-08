@@ -1,0 +1,129 @@
+.header {
+  border: 1px solid $line-color;
+  height: 80px;
+  top: 0;
+  padding-top: 25px;
+  padding-left: 25px;
+  width: 100%;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-list {
+  margin-left: 90px;
+}
+.header-list,
+.header-contacts {
+  display: flex;
+  list-style: none;
+}
+.header-contacts {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-logo a {
+  text-decoration: none;
+  color: $black-elements;
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-family: "Raleway";
+  font-weight: 700;
+}
+.logo {
+  color: $accent-color;
+}
+.header-list .header-link {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: $secondary-text-color;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-decoration: none;
+  list-style: none;
+}
+.list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-item + .contacts-item {
+  margin-left: 40px;
+}
+/* SVG sprite для иконок хэдера */
+.email-icon {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+}
+.contact-email {
+  &:hover .email-icon,
+  &:focus .email-icon {
+    // Не смогла подставить переменную в цвет
+    --color5: #2196f3;
+  }
+}
+.header-contacts .contacts-link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
+}
+.header-contacts {
+  .contacts-link {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: $primary-text-color;
+    font-family: "Roboto";
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+.phone-icon {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
+.contact-phone {
+  &:hover .phone-icon,
+  &:focus .phone-icon {
+    // Не смогла подставить переменную в цвет
+    --color5: #2196f3;
+  }
+}
+.header-list .header-link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
+}
+.header-list {
+  .current {
+    color: $accent-color;
+  }
+}
+.header-link {
+  position: relative;
+  padding-bottom: 31px;
+}
+.current {
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}
