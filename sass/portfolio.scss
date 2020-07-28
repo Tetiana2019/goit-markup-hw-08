@@ -1,5 +1,7 @@
 @import "./Utils/variables";
 @import "./Base/normalize";
+@import "./Utils/breakpoints";
+@import './Components/container';
 @import "./Components/header";
 @import "./Components/portfolioFilters";
 @import "./Components/portfolioCards";

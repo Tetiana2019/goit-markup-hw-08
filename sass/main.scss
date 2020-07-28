@@ -1,5 +1,7 @@
 @import "./Utils/variables";
 @import "./Base/normalize";
+@import "./Utils/breakpoints";
+@import './Components/container';
 @import "./Components/header";
 @import "./Components/order";
 @import "./Components/description";
@@ -8,3 +10,4 @@
 @import "./Components/clients";
 @import "./Components/footer";
 @import "./Components/modal";
+
